@@ -4,37 +4,18 @@ import { Grid } from '@src/components';
 
 export const Home = () => {
   return (
-    <Grid
-      sx={{
-        padding: 10
-      }}
-    >
+    <Grid padding={10}>
       <Grid container>
-        <Grid
-          item
-          sx={{
-            alignItems: 'center'
-          }}
-        >
+        <Grid item alignItems="center">
           <Text variant="h6">One Piece</Text>
         </Grid>
-        <Grid
-          item
-          sx={{
-            alignItems: 'center'
-          }}
-        >
+        <Grid item alignItems="center">
           <Text variant="h6">É real</Text>
         </Grid>
       </Grid>
 
       <Grid container spacing={5}>
-        <Grid
-          item
-          sx={{
-            alignItems: 'center'
-          }}
-        >
+        <Grid item alignItems="center">
           <TextInput
             label="Email"
             style={{
@@ -42,12 +23,7 @@ export const Home = () => {
             }}
           />
         </Grid>
-        <Grid
-          item
-          sx={{
-            alignItems: 'center'
-          }}
-        >
+        <Grid item alignItems="center">
           <TextInput
             label="Password"
             style={{

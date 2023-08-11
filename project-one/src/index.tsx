@@ -22,7 +22,6 @@ export const Main = () => {
       }}
     >
       <Grid
-        container
         sx={{
           height: 60
         }}
@@ -30,12 +29,7 @@ export const Main = () => {
 
       <Toolsbar />
 
-      <Grid
-        container
-        sx={{
-          height: '100%'
-        }}
-      >
+      <Grid height={'100%'}>
         <TabViewNavigation routes={routes} renderScene={renderScene} />
       </Grid>
     </Grid>

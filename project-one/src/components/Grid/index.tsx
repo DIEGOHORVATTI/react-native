@@ -5,10 +5,10 @@ import { GridContainer } from './GridContainer';
 import { GridProps } from './types';
 
 export const Grid = (
-  props: GridProps &
-    Omit<VStackProps, 'style'> & {
-      sx?: VStackProps['style'];
-    }
+  props: GridProps & {
+    sx?: VStackProps['style'];
+  }
 ) => {
+  /* @ts-ignore */
   return <GridContainer {...props} />;
 };
