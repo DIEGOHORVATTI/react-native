@@ -1,34 +1,14 @@
-import { Route, SceneMap } from 'react-native-tab-view';
+import { Home, Login } from '@src/pages';
 
-import { Grid } from '@src/components';
-import { Home } from '@src/pages';
-
-const ListRender = () => (
-  <Grid
-    item
-    sx={{
-      flex: 1
-    }}
-  />
-);
-
-const renderRoutes = {
+export const renderRoutes = {
   home: {
     key: 'home',
     title: 'Home',
     render: Home
   },
-  list: {
-    key: 'list',
-    title: 'Listagem',
-    render: ListRender
+  login: {
+    key: 'login',
+    title: 'Login',
+    render: Login
   }
 };
-
-export const routes: Array<Route> = Object.values(renderRoutes);
-
-export const renderScene = SceneMap(
-  Object.fromEntries(
-    Object.entries(renderRoutes).map(([key, { render }]) => [key, render])
-  )
-);
