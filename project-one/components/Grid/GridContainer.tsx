@@ -1,4 +1,4 @@
-import { VStack, VStackProps } from '@react-native-material/core';
+import { View } from 'react-native';
 import styled from 'styled-components/native';
 
 const gridStyles = {
@@ -12,7 +12,7 @@ const itemStyles = {
   flex: 1
 };
 
-export const GridContainer = styled(VStack)<{
+export const GridContainer = styled(View)<{
   container?: boolean;
   item?: boolean;
   spacing?: number;

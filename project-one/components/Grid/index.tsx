@@ -1,12 +1,11 @@
-import { VStackProps } from '@react-native-material/core';
-
+import { ViewProps } from 'react-native';
 import { GridContainer } from './GridContainer';
 
 import { GridProps } from './types';
 
 export const Grid = (
   props: GridProps & {
-    sx?: VStackProps['style'];
+    sx?: ViewProps['style'];
   }
 ) => {
   /* @ts-ignore */

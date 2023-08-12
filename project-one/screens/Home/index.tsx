@@ -1,16 +1,16 @@
-import { Button, Text, TextInput } from '@react-native-material/core';
+import { Button, Text, TextInput } from 'react-native-paper';
 
-import { Grid } from '@src/components';
+import { Grid } from '../../components';
 
 export const Home = () => {
   return (
     <Grid padding={10}>
       <Grid container>
         <Grid item alignItems="center">
-          <Text variant="h6">One Piece</Text>
+          <Text variant="titleMedium">One Piece</Text>
         </Grid>
         <Grid item alignItems="center">
-          <Text variant="h6">É real</Text>
+          <Text variant="titleMedium">É real</Text>
         </Grid>
       </Grid>
 
@@ -35,14 +35,13 @@ export const Home = () => {
 
       <Grid container>
         <Button
-          title="Press me"
-          variant="contained"
-          color="primary"
           style={{
             width: '100%'
           }}
           onPress={() => console.log('Pressed')}
-        />
+        >
+          Login
+        </Button>
       </Grid>
     </Grid>
   );

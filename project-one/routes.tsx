@@ -1,4 +1,4 @@
-import { Home, Login } from '@src/pages';
+import { Home, Login } from './screens';
 
 export const renderRoutes = {
   home: {
